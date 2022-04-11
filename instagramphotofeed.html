@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram-bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b855631d02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md   ">
+        <div class="container-sm">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    <i class="bi bi-instagram text-black-50"></i>
+                    <span>instagram</span>
+                </span>
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+            aria-label="Toggle naigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav navbar-dark">
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="btn btn-success" data-bs-toggle="modal"  data-bs-target="#exampleModal"href="#new-post" >Create a new post</a>
+                    </li>
+                    
+                    <div class="dropdown">
+                        <a class="btn btn-light dropdown-toggle " href="#" role="button"
+                         id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear-fill text-black"></i></a> 
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                                 <li><a class="dropdown-item " href="#">Action</a></li>
+                                 <li><a class="dropdown-item" href="#">Another action</a></li>
+                                 <li><a class="dropdown-item" href="#">Something else </a></li>                                
+                                 <li><hr class="dropdown-divider"></li>
+                                 <li><a class="dropdown-item  mt-1" href="#">Log Out</a></li>
+                            </ul>
+                    </div>
+                    <li class="nav-item d-md-none">
+                        <a href="#topics" class="nav-link">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+
+            
+        </div> <!-- container end -->
+    </nav> <!-- nav-bar end -->
+    
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" 
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="form-floating m-2 "> <!-- floating form -->
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea"></label>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col" >
+                <div class=" p-1  border bg-light">
+                    <a href="#"><i class="bi bi-camera-fill p-2 text-black "></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class=" p-1 border bg-light">
+                    <a href="#"> <i class="bi bi-geo-alt-fill text-black border-5"></i></a>
+                </div>
+            </div>
+            
+          </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div> <!-- modal end -->
+
+<div class="container" id="container-1">
+    <div class="border p-1 w-25 ">
+            <a href="#"> <i class="bi bi-geo-alt-fill text-black border-5"></i></a>
+    </div>
+
+</div>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+</html>

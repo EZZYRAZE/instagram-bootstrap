@@ -11,3 +11,7 @@
     max-width: 15%;
     border-radius: 5rem;
 }
+
+#btn-grid{
+    background: linear-gradient(to right top, #6e91f0, #7dd0dd);
+}

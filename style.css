@@ -15,3 +15,10 @@
 #btn-grid{
     background: linear-gradient(to right top, #6e91f0, #7dd0dd);
 }
+
+.tooltip-inner {
+  height: 30px;
+  font-size: 12px;
+  background: linear-gradient(to right top, #6e91f0, #7dd0dd);
+  color: red;
+}

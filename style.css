@@ -12,13 +12,28 @@
     border-radius: 5rem;
 }
 
-#btn-grid{
-    background: linear-gradient(to right top, #6e91f0, #7dd0dd);
-}
+
 
 .tooltip-inner {
   height: 30px;
   font-size: 12px;
-  background: linear-gradient(to right top, #6e91f0, #7dd0dd);
-  color: red;
+  background: linear-gradient(to right top, #4cbe85, #b8dfbe);
+}
+
+#pills-profile-tab, 
+#pills-home-tab,
+#btn-newpost, 
+#btn-grid{
+background: linear-gradient(to right top, #4cbe85, #b8dfbe);
+}
+
+
+
+#camera-button{
+    border-radius: .25rem;
+  
+}
+
+#geo-button1{
+    border-radius: 2rem;
 }

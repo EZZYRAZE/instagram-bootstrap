@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b855631d02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>instagram-feed-bootstrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light ps-5 ">
+        <div class="container-sm">
+            <a class="navbar-brand" href="#"> 
+                <i class="fab fa-instagram"></i> 
+                <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="">
+            </a>
+    
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav navbar-dark">
+                    <li class="nav-item ms-2 d-none d-md-inline" >
+                        <a class="btn me-1" id="btn-newpost" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            href="#new-post" >Create a new post</a> 
+                    </li>
+    
+                    <div class="dropdown">
+                        <a id="dropdown-nav" class="btn  dropdown-toggle  " href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear-fill text-black"></i></a>
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item " href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else </a></li>
+                            <li>
+                                <hr class="dropdown-divider ">
+                            </li>
+                            <li><a class="dropdown-item  mt-1" href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+    
+                </ul>
+            </div>
+    
+    
+        </div>
+    </nav>
+
+    <ul class="nav nav-pills mb-1 d-flex justify-content-center pt-2 pb-1  " id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active  me-1"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home" 
+              type="button" role="tab" 
+              aria-controls="pills-home" 
+              aria-selected="true"
+              data-toggle="tooltip" 
+              data-placement="right"
+              title="grid view">
+            <i class="bi bi-grid-fill h3 text-dark "></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link " 
+                    id="pills-profile-tab" 
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" 
+                    type="button" 
+                    role="tab" 
+                    aria-controls="pills-profile"
+                    aria-selected="false" 
+                    data-toggle="tooltip" 
+                    data-placement="right" 
+                    title="list view">
+                    <i class="bi bi-list h3 text-dark"></i>
+            </button>
+        </li>
+
+    </ul>
+
+
+    <div class="tab-content " id="pills-tabContent">
+        <div class="tab-pane fade mt-5" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <!-- picture card 1 -->
+            <section id="picture-card">
+                <div class="container ">
+                    <div class="row  g-4 justify-content-center align-content-center px-5">
+                        <div class="col-mb-6 col-lg-4 ">
+                            <div class="card " style="width: 25rem;" id="card-1">
+                                <div class="card-header border-bottom-0 d-flex justify-content-between">
+                                    <div>
+                                        <span class>My first photo</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-muted h6">12/76</span>
+                                    </div>
+                                </div>
+                                <img src="https://picsum.photos/200/300" class="" style="height: 300px;">
+                                <div class="card-body text-start pb-0">
+                                    <h5 class="card-title mb-3 lead">23 likes</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Quia, fugit?</p>
+                                    <div class=" d-flex justify-content-between pb-0" id="pic-icons">
+                                        <div class="d-flex ">
+                                            <div>
+                                                <a href="#"><i class="bi bi-heart  text-dark mx-1"></i></a>
+                                            </div>
+                                            <div>
+                                                <p class="text-muted ps-2 ">Comments...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="bi bi-three-dots-vertical  text-dark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- picture card end -->
+
+            <!-- picture card 1 -->
+            <section id="picture-card">
+                <div class="container pt-3">
+                    <div class="row  g-4 justify-content-center align-content-center px-5">
+                        <div class="col-mb-6 col-lg-4 ">
+                            <div class="card " style="width: 25rem;" id="card-1">
+                                <div class="card-header border-bottom-0 d-flex justify-content-between">
+                                    <div>
+                                        <span class>My first photo</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-muted h6">12/76</span>
+                                    </div>
+                                </div>
+                                <img src="https://picsum.photos/200/300" class="" style="height: 300px;">
+                                <div class="card-body text-start pb-0">
+                                    <h5 class="card-title mb-3 lead">23 likes</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Quia, fugit?</p>
+                                    <div class=" d-flex justify-content-between pb-0" id="pic-icons">
+                                        <div class="d-flex ">
+                                            <div>
+                                                <a href="#"><i class="bi bi-heart  text-dark mx-1"></i></a>
+                                            </div>
+                                            <div>
+                                                <p class="text-muted ps-2 ">Comments...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="bi bi-three-dots-vertical  text-dark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- picture card end -->
+
+            <!-- picture card 1 -->
+            <section id="picture-card">
+                <div class="container pt-3 ">
+                    <div class="row  g-4 justify-content-center align-content-center px-5">
+                        <div class="col-mb-6 col-lg-4 ">
+                            <div class="card " style="width: 25rem;" id="card-1">
+                                <div class="card-header border-bottom-0 d-flex justify-content-between">
+                                    <div>
+                                        <span class>My first photo</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-muted h6">12/76</span>
+                                    </div>
+                                </div>
+                                <img src="https://picsum.photos/200/300" class="" style="height: 300px;">
+                                <div class="card-body text-start pb-0">
+                                    <h5 class="card-title mb-3 lead">23 likes</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Quia, fugit?</p>
+                                    <div class=" d-flex justify-content-between pb-0" id="pic-icons">
+                                        <div class="d-flex ">
+                                            <div>
+                                                <a href="#"><i class="bi bi-heart  text-dark mx-1"></i></a>
+                                            </div>
+                                            <div>
+                                                <p class="text-muted ps-2 ">Comments...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="bi bi-three-dots-vertical  text-dark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- picture card end -->
+
+            <!-- picture card 1 -->
+            <section id="picture-card">
+                <div class="container pt-3 ">
+                    <div class="row  g-4 justify-content-center align-content-center px-5">
+                        <div class="col-mb-6 col-lg-4 ">
+                            <div class="card " style="width: 25rem;" id="card-1">
+                                <div class="card-header border-bottom-0 d-flex justify-content-between">
+                                    <div>
+                                        <span class>My first photo</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-muted h6">12/76</span>
+                                    </div>
+                                </div>
+                                <img src="https://picsum.photos/200/300" class="" style="height: 300px;">
+                                <div class="card-body text-start pb-0">
+                                    <h5 class="card-title mb-3 lead">23 likes</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Quia, fugit?</p>
+                                    <div class=" d-flex justify-content-between pb-0" id="pic-icons">
+                                        <div class="d-flex ">
+                                            <div>
+                                                <a href="#"><i class="bi bi-heart  text-dark mx-1"></i></a>
+                                            </div>
+                                            <div>
+                                                <p class="text-muted ps-2 ">Comments...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="bi bi-three-dots-vertical  text-dark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- picture card end -->
+        
+        </div> <!-- tab-pane end -->
+        <div class="tab-pane fade show active d-flex justify-content-center" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+           
+            <div class="section">
+                <div class="container p-5 allign-item-center">
+                    <div class="row d-flex justify-content-between ">
+                       
+                        <div class="col-sm-4 col-md-9 col-lg-4">
+                            <div class=" ">
+                                <img src="https://images.unsplash.com/photo-1649955413184-c76c16a4f402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="img-fluid" alt="Responsive image">
+                        
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-9 col-lg-4">
+                            <div class=" ">
+                                <img src="https://images.unsplash.com/photo-1649955413184-c76c16a4f402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="img-fluid" alt="Responsive image">
+                        
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-9 col-lg-4">
+                            <div class=" ">
+                                <img src="https://images.unsplash.com/photo-1649955413184-c76c16a4f402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="img-fluid" alt="Responsive image">
+                        
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-9 col-lg-4">
+                            <div class=" ">
+                                <img src="https://images.unsplash.com/photo-1649955413184-c76c16a4f402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="img-fluid" alt="Responsive image">
+                        
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-9 col-lg-4">
+                            <div class=" ">
+                                <img src="https://images.unsplash.com/photo-1649955413184-c76c16a4f402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="img-fluid" alt="Responsive image">
+                        
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-9 col-lg-4">
+                            <div class=" ">
+                                <img src="https://images.unsplash.com/photo-1649955413184-c76c16a4f402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="img-fluid" alt="Responsive image">
+                        
+                            </div>
+                        </div>
+                       
+
+                       
+
+                        
+
+                  
+                        
+                    </div>
+                </div>
+            </div>
+
+            </div>
+           
+
+
+        </div>
+    
+        
+    </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="form-floating m-2 ">
+                    <!-- floating form -->
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea"></label>
+                </div>
+                <div class="modal-body">
+                    <!-- camera & map icon -->
+                    <div class="row">
+                        <div class="col">
+                            <button class="bg-white " id="camera-button"> 
+                                <div class="btn rounded"> 
+                                    <a href="#"><i class="bi bi-camera-fill "></i></a>
+                                </div>
+                            </button>
+                            <button class="bg-white" id="geo-button1 ">
+                                <div class="btn"  ><a href="#"> <i class="bi bi-geo-alt-fill  "></i></a></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- modal end -->
+                   
+
+<script src="tooltip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script 
+</body>
+
+</html
